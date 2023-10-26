@@ -1,0 +1,47 @@
+/* Define styles for the top navbar */
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 0;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #f5c518;
+}
+
+.ipc-logo{
+  margin-right: 60px;
+}
