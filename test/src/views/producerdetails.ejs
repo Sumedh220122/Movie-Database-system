@@ -1,0 +1,94 @@
+<!-- views/movie_details.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Producer Details</title>
+    </head>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+    
+        .details-container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        /* Title box */
+        .title-box {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        /* Genre box */
+        .genre-box {
+            font-size: 16px;
+        }
+    
+        /* Release date box */
+        .release-date-box {
+            font-size: 16px;
+        }
+    
+        /* Runtime box */
+        .runtime-box {
+            font-size: 16px;
+        }
+    
+        /* Budget box */
+        .budget-box {
+            font-size: 16px;
+        }
+    
+        /* Revenue box */
+        .revenue-box {
+            font-size: 16px;
+        }
+    
+        /* Rating box */
+        .rating-box {
+            font-size: 16px;
+        }
+    
+        /* Director box */
+        .director-box {
+            font-size: 16px;
+        }
+    
+        /* Actor box */
+        .actor-box {
+            font-size: 16px;
+        }
+    
+        /* Producer box */
+        .producer-box {
+            font-size: 16px;
+        }
+    </style>
+    <body>
+        <div class="details-container">
+            <h1>Producer Details</h1>
+            <div class="details-box">
+                <p><strong>Name:</strong> <%= producer.producer_name %></p>
+            </div>
+            <div class="details-box">
+                <p><strong>DOB:</strong> <%= producer.date_of_birth %></p>
+            </div>
+            <div class="details-box">
+                <p><strong>Awards:</strong> <%= producer.awards %></p>
+            </div>
+            <div class="details-box">
+                <p><strong>Gender:</strong> <%= producer.gender %></p>
+            </div>
+            <div class="details-box">
+                <p><strong>Nationality:</strong> <%= producer.nationality %></p>
+            </div>
+            <!-- Add more details as needed -->
+        </div>
+    </body>
+</html>
