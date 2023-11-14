@@ -1,0 +1,53 @@
+div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  .search-bar {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px; /* Adjust the width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+    position : absolute;
+    flex-direction: column;
+  }
+  
+  .search-bar form input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top : 100px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .app-container {
+    /* Background image styles */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    /* Center-align the search bar using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  }
