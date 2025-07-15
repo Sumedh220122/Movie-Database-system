@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <div>
+            <form  onSubmit = {handleSubmit}>
+                <input type="text" placeholder="Fname"name = "fname" onChange={handleChange} />
+                <input type="text" placeholder="Lname"name = "lname" onChange={handleChange} />
+                <input type="text" placeholder="Password"name = "password" onChange={handleChange} />         
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <script>
+            const handleSubmit = () =>{
+                window.location.href =  '/movie';
+            }
+        </script>
+    </body>
+</html>

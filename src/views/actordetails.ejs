@@ -1,0 +1,79 @@
+<!-- views/movie_details.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Details</title>
+</head>
+
+<style>
+    
+    .details-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for individual detail boxes */
+    .details-box {
+        margin-bottom: 15px;
+    }
+
+    /* Style for title box */
+    .title-box {
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+    }
+
+    .title-box p {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    /* Style for strong tags */
+    .details-box strong {
+        font-weight: bold;
+    }
+
+    /* Style for links */
+    .details-box a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .details-box a:hover {
+        text-decoration: underline;
+    }
+
+    /* Style for review text */
+    .review-text {
+        font-style: italic;
+        color: #555;
+    }
+</style>
+<body >
+    <div class="details-container">
+        <h1>Actor Details</h1>
+        <div class="details-box name-box">
+            <p><strong>Name:</strong> <%= actor.actor_name %></p>
+        </div>
+        <div class="details-box dob-box">
+            <p><strong>DOB:</strong> <%= actor.date_of_birth %></p>
+        </div>
+        <div class="details-box awards-box">
+            <p><strong>Awards:</strong> <%= actor.awards %></p>
+        </div>
+        <div class="details-box gender-box">
+            <p><strong>Gender:</strong> <%= actor.gender %></p>
+        </div>
+        <div class="details-box nationality-box">
+            <p><strong>Nationality:</strong> <%= actor.nationality %></p>
+        </div>
+    </div>
+</body>
+</html>
